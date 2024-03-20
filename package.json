@@ -1,5 +1,5 @@
 {
-  "name": "electron-stuff-do-not-delete",
+  "name": "electron-boileplate",
   "version": "1.0.0",
   "main": "electron/main.js",
   "scripts": {
