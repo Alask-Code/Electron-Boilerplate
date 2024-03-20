@@ -1,15 +1,18 @@
+const { resolve } = require('path');
 const { BrowserWindow } = require('electron');
+const icon = resolve(__dirname, '../', 'build', 'icon.png');
 
 function createWindow () {
   const win = new BrowserWindow({
-    height: 600,
+    icon,
     width: 800,
+    height: 600,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule: true
     },
-    title: 'Name Here'
+    title: 'App Name Here'
   });
   win.removeMenu();
   win.loadFile('src/index.html');

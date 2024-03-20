@@ -4,7 +4,21 @@
   "main": "electron/main.js",
   "scripts": {
     "elec": "electron .",
-    "nodemon":"nodemon --exec electron ."
+    "nodemon": "nodemon --exec electron .",
+    "build": "electron-builder -p=never",
+    "publish": "electron-builder -p=always"
+  },
+  "build": {
+    "productName": "Electron Boilerplate",
+    "appId": "package.name.here",
+    "nsis": {
+      "publish": {
+        "provider": "github",
+        "owner": "git-name",
+        "repo": "Electron-Boilerplate"
+      },
+      "oneClick": false
+    }
   },
   "devDependencies": {
     "@electron-internal/eslint-config": "^1.0.1",
