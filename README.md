@@ -1,6 +1,9 @@
 # Electron Boilerplate
 This projects holds some handful packages that speeds up developing and publishing ElectronJS Projects.
 
+# Documentation
+First of All, run `npm i` to install required packages, then you're good to go.
+
 ## Features
 - `nodemon` to live reloading including electron files.
 
